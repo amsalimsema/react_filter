@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
+  background-color: #10121b;
+  font-size: 1.1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.app_container {
+  width: 100%;
+  margin: auto;
+}
+.app_display {
+  display: flex;
+}
+.app_title {
+  text-align: center;
+  margin: 2rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.buttons_btn {
+  padding: 0.5rem 2rem;
+  background-color: #0c3564;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
+  margin: 0.5rem;
+}
+
+.buttons_btn:hover {
+  background-color: #037fff;
+  cursor: pointer;
+}
+
+.buttons_btn:active,
+.buttons_btn:focus {
+  outline: none;
+  border: none;
+}
+
+.card_container {
+  width: 100%;
+}
+.card {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardone {
+  width: 300px;
+  margin: 10px;
+  cursor: pointer;
+}
+.card-img img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 0rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-img img:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.card-title {
+  font-weight: bold;
+  padding: 0.7rem;
+}
+.card-desc {
+  font-weight: normal;
+  color: gainsboro;
+  padding: 0.7rem;
+}
+.card-body {
+  background-color: rgb(0, 0, 0, 0.9);
+  border-radius: 0 0 4px 4px;
 }
